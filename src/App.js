@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Route } from "react-router-dom";
+import './App.css'
 import Navbar from "./components/Navbar";
 import Cards from "./components/Cards";
 import City from "./components/City";
@@ -52,7 +53,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="App">
       <Route path="/" render={() => <Navbar onSearch={onSearch} />} />
       <Route
         exact
