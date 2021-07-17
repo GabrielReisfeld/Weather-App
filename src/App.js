@@ -18,6 +18,8 @@ function App() {
     )
       .then((r) => r.json())
       .then((c) => {
+        console.log(c.id, cities)
+        //if (c.id === city.id)
         if (c.main !== undefined) {
           const city = {
             min: Math.round(c.main.temp_min),
@@ -33,9 +35,8 @@ function App() {
             description: c.weather[0].description,
             country: c.sys.country,
             clouds: c.clouds.all,
-            latitud: c.coord.lat,
-            longitud: c.coord.lon,
           };
+          if (cities.includes(city.id)) alert("ya")
           setCities((oldCities) => [...oldCities, city]);
         } else {
           alert("City not found");

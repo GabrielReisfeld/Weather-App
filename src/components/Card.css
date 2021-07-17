@@ -1,58 +1,25 @@
 .card {
-    width: 25rem;
-    height: 30rem;
+    width: 23rem;
+    height: 32rem;
     display: flex;
     white-space: nowrap;
     margin: 2rem;
+    background-color: rgba(255, 255, 255, 0.35);
+    border-radius: 12px;
+    color: white;
+}
+.card:hover {
+    background-color: rgb(132, 175, 219);
 }
 
 .city {
     font-size: 2rem;
 }
 .country {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .btn {
     margin-right: -86%;
     
 }
-
-/* .card {
-    margin: 20px;
-    width: 18rem;
-  }
-  
-  .card-title {
-    margin-bottom: 15px;
-  }
-  
-  #closeIcon {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 8px;
-    margin-top: 8px;
-  }
-  
-  .card-body {
-    margin-top: 0px !important;
-    padding-top: 0px !important;
-  } */
-
-
-  /* @keyframes un_efecto {
-    0%{ transform: translate(0,-5px);}
-    25%{ transform: translate(0,-10px);}
-    50%{ transform: translate(0,-20px);}
-    75%{ transform: translate(0, 5px);}
-    100%{ transform: translate(0, 10px);}
- }
-
-  .iconoClima {
-    animation-name: un_efecto;
-   animation-iteration-count: infinite;
-   animation-timing-function: ease-in;
-   animation-duration: 2s;
-   animation-delay: 0s;
-  } */
-  
