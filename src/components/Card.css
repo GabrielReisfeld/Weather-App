@@ -7,9 +7,10 @@
     background-color: rgba(255, 255, 255, 0.35);
     border-radius: 12px;
     color: white;
+    font-weight: bold;
 }
 .card:hover {
-    background-color: rgb(132, 175, 219);
+    background-color: rgba(77, 36, 36, 0.726);
 }
 
 .city {
@@ -22,4 +23,16 @@
 .btn {
     margin-right: -86%;
     
+}
+
+.weather-icon {
+    position: relative;
+    top: 0;
+    animation: weather-icon-move 3s ease-in-out infinite;
+}
+
+@keyframes weather-icon-move {
+	50% { 
+        transform: translateY(-8px); 
+    }
 }

@@ -17,7 +17,7 @@ const Card = ({temp, min, max, feels, name, img, onClose, country, weather, id})
             </div>
             <div className="row">
                 <div className="col-12">
-                <img src={"http://openweathermap.org/img/wn/"+img+"@2x.png"} alt="icon" />
+                <img src={"http://openweathermap.org/img/wn/"+img+"@2x.png"} alt="icon" className='weather-icon' />
                 </div>
             </div>
             <div className="row">
@@ -35,7 +35,7 @@ const Card = ({temp, min, max, feels, name, img, onClose, country, weather, id})
                     <p>Feels Like</p>
                 </div>
                 <div className="col-6">
-                    <p>{feels}°</p>
+                    <p>{feels.toFixed(1)}°</p>
                 </div>
             </div>
             <hr className="mx-5"/>
