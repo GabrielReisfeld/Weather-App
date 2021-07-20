@@ -10,12 +10,13 @@
     font-weight: bold;
 }
 .card:hover {
-    background-color: rgba(77, 36, 36, 0.726);
+    background-color: rgba(48, 35, 35, 0.726);
 }
 
 .city {
     font-size: 2rem;
 }
+
 .country {
     font-size: 1.2rem;
 }

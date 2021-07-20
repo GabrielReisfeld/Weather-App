@@ -18,8 +18,6 @@ function App() {
     )
       .then((r) => r.json())
       .then((c) => {
-        console.log(c.id, cities)
-        //if (c.id === city.id)
         if (c.main !== undefined) {
           const city = {
             min: Math.round(c.main.temp_min),
@@ -36,7 +34,11 @@ function App() {
             country: c.sys.country,
             clouds: c.clouds.all,
           };
-          if (cities.includes(city.id)) alert("ya")
+          cities.map(ci => {
+            if (ci.id === c.id) {
+              setCities((oldCities) => oldCities.filter((c) => c.id !== ci.id))
+            } 
+          })
           setCities((oldCities) => [...oldCities, city]);
         } else {
           alert("City not found");

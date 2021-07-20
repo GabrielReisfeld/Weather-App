@@ -17,7 +17,7 @@ const SearchBar = ({onSearch}) => {
         value={city}
         onChange={(e) => setCity(e.target.value)}
       />
-      <input type="submit" value="Search" onClick={handleSubmit} />
+      <input type="submit" className="bg-primary text-white" value="Search" onClick={handleSubmit} />
     </form>
   );
 };
